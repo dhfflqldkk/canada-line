@@ -2,8 +2,10 @@ import React from 'react';
 import { MapContainer, TileLayer, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import CircleMarks from './CircleMarks';
+import { LatLngTuple } from 'leaflet';
 
-const canadaLineToYVR = [
+
+const canadaLineToYVR: LatLngTuple[] = [
     [49.2859, -123.1116], // Waterfront
     [49.2829, -123.1192], // Vancouver City Centre
     [49.2745, -123.1217], // Yaletown-Roundhouse
@@ -19,7 +21,7 @@ const canadaLineToYVR = [
     [49.1939, -123.1786], // YVR-Airport
 ];
 
-const canadaLineToRichmond = [
+const canadaLineToRichmond: LatLngTuple[] = [
     [49.2859, -123.1116], // Waterfront
     [49.2829, -123.1192], // Vancouver City Centre
     [49.2745, -123.1217], // Yaletown-Roundhouse
